@@ -16,6 +16,17 @@ void fib_numbers(int n)
     }
 }
 
+void find_divisors(int n)
+{
+    for (int i = 1; i < n; i++)
+    {
+        if (n % i == 0)
+        {
+        std::cout << i << std::endl;
+        }
+    }
+}
+
 int main()
 {
     fib_numbers(10);
