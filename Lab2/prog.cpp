@@ -11,7 +11,7 @@ void fib_numbers(int n)
         c = a + b;
         a = b;
         b = c;
-        std::cout << c << std::endl;
+        std::cout << a << std::endl;
     }
 }
 
@@ -28,7 +28,7 @@ void find_divisors(int n)
 
 void is_prime_number(int n)
 {
-    for (int i = 1; i < n; i++)
+    for (int i = 2; i < n; i++)
     {
         if (n % i == 0)
         {
@@ -46,5 +46,6 @@ int main()
 {
     fib_numbers(10);
     find_divisors(801);
+    find_divisors(809);
     is_prime_number(809);
 }
