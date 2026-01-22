@@ -229,8 +229,3 @@ class Program:
         except IOError as e:
             print(f"Ошибка при трансляции: {e}")
 
-
-if __name__ == "__main__":
-    prog = Program("prog.cpp")
-    prog.parse()
-    prog.translate("prog.py")
